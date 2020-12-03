@@ -13,6 +13,40 @@ const render = require("./Library/htmlRenderer");
 console.log("response");
 
 
+// console.log(render([intern]));
+
+
+
+const questions = [{
+        type: 'input',
+        name: 'name',
+        message: 'What is your name?',
+    }, {
+        type: 'input',
+        name: 'school',
+        message: 'What school are you attending?',
+    },
+    {
+        type: 'input',
+        name: 'id',
+        message: 'What is your work id number?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?',
+    },
+]
+
+function init() {
+    inquirer.prompt(questions).then(function (response) {
+        console.log(response);
+        const intern = new Intern(response.name, response.id, response.email, response.school);
+        fs.writeFileSync(outputPath, render([intern]));
+    })
+}
+init();
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
