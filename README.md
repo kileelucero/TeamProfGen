@@ -1,7 +1,7 @@
 # TeamProfGen
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ## Description
-Using Node CLI to Generate a Team for Work
+Using Node CLI and OOP to Generate a Team for Work
 
 Link to live site: [TeamProfGen](https://kileelucero.github.io/TeamProfGen/)
 
@@ -15,7 +15,7 @@ Link to live site: [TeamProfGen](https://kileelucero.github.io/TeamProfGen/)
 * [Questions](#questions)
 
 ## Installation
-Run in Browser
+Run In Browser under main.html
 ## Usage
 Used to enroll new team member profiles
 ## License
